@@ -11,8 +11,18 @@ namespace Drugstore_Management_System.Database.Models.Users
     {
         public string Experience { get; set; }
         public string Education { get; set; }
-        public Pharmacist(int id, string name, string surName, string fin)
-            : base(id, name, surName, fin) { }
+        public Pharmacist( string name, string surName, string fin,string experience , string education)
+            : base( name, surName, fin) 
+        { 
+        Experience = experience;
+            Education = education;
+        }
+        public Pharmacist(int id, string name, string surName, string fin, string experience, string education)
+            : base(id, name, surName, fin) 
+        {
+            Experience = experience;
+            Education = education;
+        }
         
     }
 }
