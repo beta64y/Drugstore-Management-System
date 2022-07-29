@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Drugstore_Management_System.Database.Models.Users
 {
-    internal class User
+     abstract public class User
     {
         public int Id { get; set; }
         protected int IdCounter { get; set; } = 1;
